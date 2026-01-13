@@ -727,16 +727,45 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const jsxheading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    children: "Hello, I am learning Namaste ReactJS course"
-}, void 0, false, {
+const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Hello, I am functional heading"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 6,
+        columnNumber: 30
+    }, undefined);
+_c = HeadingComponent;
+const HeaderComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 10,
+                columnNumber: 3
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "I am learning ReactJS"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 11,
+                columnNumber: 3
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 9,
+        columnNumber: 3
+    }, undefined);
+_c1 = HeaderComponent;
+const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 6,
-    columnNumber: 19
-}, undefined);
-const root = (0, _clientDefault.default).createRoot(document.getElementById('root')); // It's the job of ReactDOM to create root i.e, heading in this case, bcz root is a dom element which is rendered to be on browser. This root is the place where all React code will run.
-// root.render(heading);
-root.render(jsxheading); // In React, Render is the technique that can redirect a page with the help of function render(). Most importantly, render a function we can use to define the HTML code within the HTML element. It helps to display certain views in the UI using certain logic defined in the render function and returns the output.
+    lineNumber: 17,
+    columnNumber: 13
+}, undefined));
+var _c, _c1;
+$RefreshReg$(_c, "HeadingComponent");
+$RefreshReg$(_c1, "HeaderComponent");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
