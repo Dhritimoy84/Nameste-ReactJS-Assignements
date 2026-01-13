@@ -1,0 +1,23 @@
+{
+  "name": "episode-02---igniting-our-app",
+  "version": "1.0.0",
+  "description": "This is npm package manager for learning purpose",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dhritimoy Majumdar",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  }
+
+  
+
+
+}
