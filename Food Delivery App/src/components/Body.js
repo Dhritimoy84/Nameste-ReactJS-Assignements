@@ -1,15 +1,22 @@
 import resList from "../utils/restro-data";
 import RestaurantCard from "./RestaurantCard";
-const Body=()=> {
+import { useState } from "react";
+import resList from "../utils/restro-data";
 
+
+const Body=()=> {
+  
+const [listResturant, setListResturant]= useState(resList)
   return (
 
   <div className="body">
-  <h5>Search</h5>
+  <button className="btn" onClick={()=>{
+    const filteredResData = listResturant.filter((restroData)=>restroData.data.avgRating>4.2)
+    setListResturant(filteredResData);
+  }}>Top Rated Resturant</button>
   <div className="restro">
- {/* <ResturantCard restroData={resList[0]}/> */}
- {/* <ResturantCard restroData={resList[1]}/> */}
-  {resList.map((restaurant) => (
+
+  {listResturant.map((restaurant) => (
           <RestaurantCard key={restaurant.data.id} resData={restaurant} />
         ))}
 

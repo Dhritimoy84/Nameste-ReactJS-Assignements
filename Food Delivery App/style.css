@@ -30,7 +30,7 @@
 
 .resto-card{
     width: 200px;
-    height: 350px;
+    /* height: 350px; */
     margin: 10px 10px;
     background-color: #EBE1D1;
     display: flex;
@@ -47,4 +47,9 @@
 .photo{
     width: 90%;
     margin: 0px 10px;
+}
+.btn{
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
 }
